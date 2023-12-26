@@ -1,0 +1,278 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.fullscreen {
+    /*height: 100vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+  
+}
+.fullscreen img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  
+}
+
+.center-text {
+    text-align: center;
+}
+ 
+#button2,#button1 {
+  /*background-color: white; 
+  color: black; 
+  border: 0px solid #04AA6D;*/
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#categories,
+#photographers,
+#about {
+    display: none;
+}
+
+/* Add the following styles to your existing CSS */
+
+
+footer {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+  }
+  .footer-column{
+    flex: 50%;
+  padding: 5px;
+  }
+  .contact-info h3,
+  .social-media h3 {
+    font-size: 18px;
+    /*margin-bottom: 10px;*/
+  }
+  .social-media h3{
+    margin-bottom: 38px;
+  }
+  
+  .contact-info p,
+  .social-media ul {
+    margin: 0;
+  }
+  
+  .contact-info a,
+  .social-media a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+  }
+  
+  .contact-info a:hover,
+  .social-media a:hover {
+    color: #ff0000; /* Change the color on hover */
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+  
+  .social-media a img {
+    width: 24px;
+    height: 24px;
+    /*vertical-align: middle;*/
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .left {
+    flex: 50%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    padding-right: 10px; /* Adjust the padding value for the desired space */
+    
+  }
+  
+  .right {
+    flex: 50%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    padding-left: 10px; /* Adjust the padding value for the desired space */
+  }
+  
+  .left img,
+  .right img {
+    max-width: 100%;
+    height: auto;
+    object-fit:cover;
+    margin-bottom: 10px; /* Adjust this margin to add space between images */
+    padding-bottom: 10px;
+  }
+  
+  .fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .fullscreen img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+
+header {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header .user-options {
+    display: flex;
+    align-items: center;
+}
+
+header .user-options a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+header .divider {
+    margin: 0 10px;
+}
+
+/* Adjust the styling as needed */
+
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
+
+/* Add the following styles to your existing CSS */
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.image-container {
+  position: relative;
+  height: 500px; /* Set the height as per your requirement */
+    margin-bottom: 5px; /* Adjust the value as per your preference */
+  }
+
+.image-container img {
+  position: absolute;
+  width:2500px;
+  height: 1500;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  padding-bottom: 20px;
+  
+}
+
+/* Existing CSS remains unchanged */
+
+/* Additional or modified styles */
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0 5px;
+}
+
+.image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(50% - 10px); /* Maintain aspect ratio */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
