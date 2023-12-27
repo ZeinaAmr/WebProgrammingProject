@@ -8,64 +8,102 @@
     <link rel="icon" href="iconcam.png" type="image/x-icon">
 </head>
 
-<!-- Add the following code inside the <body> tag, before the existing sections -->
 
-<!-- Header Section -->
-<body>
-<!--</header>
-
-    <div class="container">
-        <div class="logo">
-            <a href="homepage.html">
-                <img src="capture.png" alt="icon">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="photographers.html">Photographers</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="BookNow.html">Book Now</a></li>
-            </ul>
-        </nav>
-        <div class="user-options">
-            <a href="signUp.html">Sign Up</a>
-            <span class="divider">|</span>
-            <a href="logIn.html">Log In</a>
-        </div>
-    </div>
-</header>-->
-
-
-    <!-- Your existing HTML structure remains unchanged -->
 <section id="home">
-    <div class="fullscreen">
-        <!-- Your full-width image -->
         <img src="people.jpg" alt="Full Width Image">
     </div>
+    <section id="home">
+        <!-- ... (existing code for fullscreen, containers, wedding 1, wedding 2, wedding 3, wedding 4) ... -->
+        <h2>Wedding Photogrphy</h2>
+        <div class="container">
+            
+            <div class="left">
+                <!-- Image containers for the left column -->
+                <div class="image-container">
+                    <img src="wedding 1new.jpg" alt="Wedding 1">
+                </div>
+                <!-- Image containers for wedding 3 -->
+                <div class="image-container" id="wedding-photos-left">
+                    <img src="wedding 3.jpg" alt="Wedding 3">
+                </div>
+            </div>
+            <div class="right">
+                <!-- Image containers for the right column -->
+                <div class="image-container">
+                    <img src="wedding 2.jpg" alt="Wedding 2">
+                </div>
+                <!-- Image containers for wedding 4 -->
+                <div class="image-container" id="wedding-photos-right">
+                    <img src="wedding 4.jpg" alt="Wedding 4">
+                </div>
+            </div>
+        </div>
+
+    
+    <div class="button-container">
+        <button onclick="showWedding()" id="button1">Show more/Hide</button>
+    </div>
+    <h2>Fashion Photogrphy</h2>
     <div class="container">
+      
         <div class="left">
             <!-- Image containers for the left column -->
             <div class="image-container">
-                <img src="wedding 1new.jpg" alt="Wedding 1">
+                <img src="fashion 1.jpg" alt="fashion 1">
             </div>
-            <div class="image-container">
-                <img src="wedding 3.jpg" alt="Wedding 3">
+            <!-- Image containers for wedding 3 -->
+            <div class="image-container" id="fashion-photos-left">
+                <img src="fashion 3.jpg" alt="fashion 3">
             </div>
-        </div>
-        <div class="show-more">
-            <button id="button1">Show More</button>
         </div>
         <div class="right">
             <!-- Image containers for the right column -->
             <div class="image-container">
-                <img src="wedding 2.jpg" alt="Wedding 2">
+                <img src="fashion 2.jpg" alt="fashion 2">
             </div>
-            <div class="image-container">
-                <img src="wedding 4.jpg" alt="Wedding 4">
+            <!-- Image containers for wedding 4 -->
+            <div class="image-container" id="fashion-photos-right">
+                <img src="fashion 4.jpg" alt="fashion 4">
             </div>
         </div>
     </div>
+
+
+<div class="button-container">
+    <button onclick="showFashion()" id="button1">Show more/Hide</button>
+</div>
+<h2>Wildlife Photography</h2>
+<div class="container">
+    
+    <div class="left">
+        <!-- Image containers for the left column -->
+        <div class="image-container">
+            <img src="wild 1.jpeg" alt="Wild 1">
+        </div>
+        <!-- Image containers for wedding 3 -->
+        <div class="image-container" id="wild-photos-left">
+            <img src="wild 3.jpg" alt="Wild 3">
+        </div>
+    </div>
+    <div class="right">
+        <!-- Image containers for the right column -->
+        <div class="image-container">
+            <img src="wild 2.png" alt="wild 2">
+        </div>
+        <!-- Image containers for wedding 4 -->
+        <div class="image-container" id="wild-photos-right">
+            <img src="wild 4.jpeg" alt="Wild 4">
+        </div>
+    </div>
+</div>
+
+
+<div class="button-container">
+<button onclick="showWild()" id="button3">Show more/Hide</button>
+</div>
+
+    
+
 </section>
 
 
@@ -98,7 +136,7 @@
 
 </body>
 
-<!-- Footer Section -->
+
 
 
 </html>
