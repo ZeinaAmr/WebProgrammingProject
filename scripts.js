@@ -104,16 +104,48 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-    function showWedding() {
-        var weddingImage = document.getElementById("wedding-photos");
-        if (weddingImage.style.display === "none") {
-            weddingImage.style.display = "block";
-        } else {
-            weddingImage.style.display = "none";
-        }
-        /*var list="<ul><li>excel</li><li>word</li></ul>";
-        document.getElementById("demo").innerHTML=list;
-        document.getElementById("button3").value="Hide";*/
+   
+
+        function showWedding() {
+          var weddingImageLeft = document.getElementById("wedding-photos-left");
+          var weddingImageRight = document.getElementById("wedding-photos-right");
+      
+          if (weddingImageLeft.style.display === "none" || weddingImageLeft.style.display === "") {
+              weddingImageLeft.style.display = "block";
+              weddingImageRight.style.display = "block";
+          } else {
+              weddingImageLeft.style.display = "none";
+              weddingImageRight.style.display = "none";
+          }
       }
 
+      
+      function showFashion() {
+        var fashionImageLeft = document.getElementById("fashion-photos-left");
+        var fashionImageRight = document.getElementById("fashion-photos-right");
+    
+        if (fashionImageLeft.style.display === "none" || fashionImageLeft.style.display === "") {
+            fashionImageLeft.style.display = "block";
+            fashionImageRight.style.display = "block";
+        } else {
+            fashionImageLeft.style.display = "none";
+            fashionImageRight.style.display = "none";
+        }
+    }
+      
+    function showWild() {
+      var wildImageLeft = document.getElementById("wild-photos-left");
+      var wildImageRight = document.getElementById("wild-photos-right");
   
+      if (wildImageLeft.style.display === "none" || wildImageLeft.style.display === "") {
+          wildImageLeft.style.display = "block";
+          wildImageRight.style.display = "block";
+      } else {
+          wildImageLeft.style.display = "none";
+          wildImageRight.style.display = "none";
+      }
+  }
+
+
+  
+
