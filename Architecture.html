@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-	              ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+
+<style type="text/css">
+
+    body{
+        background-color: white;
+
+    }
+
+    h1{
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .jlr{
+        font-size:0;
+    }
+
+    .jlr .jlr_item{
+        font-size:1rem;
+        display:inline-block;
+        box-sizing:border-box;
+        padding:6px;
+        opacity: 1;
+    }
+
+    .jlr img.jlr_img{
+        height: 200px;
+        opacity:1;
+    }
+
+
+
+
+
+.jlr img.jlr_loaded {
+     -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
+
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+<body>
+   <div class="continer">
+    <h1 style="margin-top: 70px;">Architecture Photography</h1>
+     <div id="jLightroom" class="jlr">
+        <a href="Arch 1.jpeg" data-lightbox="lbl" class="jlr_item"><img src="Arch 1.jpeg" class="jlr_img"/></a>
+        <a href="arch 2.jpeg" data-lightbox="lbl" class="jlr_item"><img src="arch 2.jpeg" class="jlr_img"/></a>
+        <a href="arch 3.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 3.jpg" class="jlr_img"/></a>
+        <a href="arch 4.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 4.jpg" class="jlr_img"/></a>
+        <a href="arch 5.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 5.jpg" class="jlr_img"/></a>
+        <a href="arch 6.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 6.jpg" class="jlr_img"/></a>
+        <a href="arch 7.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 7.jpg" class="jlr_img"/></a>
+        <a href="arch 8.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 8.jpg" class="jlr_img"/></a>
+        <a href="arch 9.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 9.jpg" class="jlr_img"/></a>
+        <a href="arch 10.jpg" data-lightbox="lbl" class="jlr_item"><img src="arch 10.jpg" class="jlr_img"/></a>
+        <a href="arch 11.jpeg" data-lightbox="lbl" class="jlr_item"><img src="arch 11.jpeg" class="jlr_img"/></a>
+      
+       
+        
+      
+      
+        
+    </div>
+</div>
+
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery.lightroom.js"></script>
+    
+    <script type="text/javascript">
+        $("#jLightroom").lightroom({
+            image_container_selector: ".jlr_item",
+            img_selector: "img.jlr_img",
+            img_class_loaded: "jlr_loaded",
+            img_space: 6,
+            img_mode: 'min',
+            init_callback: function(elem){$(elem).removeClass("gray_out")}
+        }).init();
+    </script>
+
+
+
+
+    
+<script src="weddingscript.js"></script>
+    
+    
+</body>
+</html>
