@@ -6,105 +6,113 @@
     <title>Capture</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="iconcam.png" type="image/x-icon">
+
+
+
+<style type="text/css">
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .jlr {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .jlr .jlr_item {
+        font-size: 1rem;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 6px;
+        opacity: 1;
+        width: 50%; /* Display two images side by side */
+    }
+
+    .jlr img.jlr_img {
+        width: 100%; /* Ensure images take full width of their container */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .jlr img.jlr_loaded {
+        -webkit-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        -o-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+        transition: opacity 1s ease-in;
+        opacity: 1;
+    }
+
+    #wild-photos{
+        display: none;
+    }
+</style>
 </head>
-
-
-<section id="home">
-        <img src="people.jpg" alt="Full Width Image">
+<body>
+    <div class="continer">
+        <div>
+        <h1 style="margin-top: 70px;">Portrait Photography</h1>
     </div>
-    <section id="home">
-        <!-- ... (existing code for fullscreen, containers, wedding 1, wedding 2, wedding 3, wedding 4) ... -->
-        <h2>Wedding Photogrphy</h2>
-        <div class="container">
+      <div id="jLightroom" class="jlr">
+         <a href="portrait 4.jpg" data-lightbox="lbl" class="jlr_item"><img src="portrait 4.jpg" class="jlr_img"/></a>
+         <a href="portrait 5.jpg" data-lightbox="lbl" class="jlr_item"><img src="portrait 5.jpg" class="jlr_img"/></a>
+         <div class="button-container">
+            <button onclick="showPortrait()" id="button1">Show more/Hide</button>
+        </div>
+       
+         <a href="portrait 9.jpg" data-lightbox="lbl" class="jlr_item"><img src="portrait 9.jpg" class="jlr_img" id="portrait-photos-left"/></a>
+         <a href="portrait 13.jpg" data-lightbox="lbl" class="jlr_item"><img src="portrait 13.jpg" class="jlr_img" id="portrait-photos-right"/></a>
+      </div>
+         <div>
+         <h1 style="margin-top: 70px;">Fashion Photography</h1>
+         </div>
+         <div id="jLightroom" class="jlr">
+         <a href="fashion 1.jpg" data-lightbox="lbl" class="jlr_item"><img src="fashion 1.jpg" class="jlr_img"/></a>
+         <a href="fashion 2.jpg" data-lightbox="lbl" class="jlr_item"><img src="fashion 2.jpg" class="jlr_img"/></a>
+         
+         <div class="button-container">
+            <button onclick="showFashion()" id="button2">Show more/Hide</button>
+        </div>
+         <a href="fashion 3.jpg" data-lightbox="lbl" class="jlr_item"><img src="fashion 3.jpg" class="jlr_img" id="fashion-photos-left"/></a>
+         <a href="fashion 4.jpg" data-lightbox="lbl" class="jlr_item"><img src="fashion 4.jpg" class="jlr_img" id="fashion-photos-right"/></a>
+         </div>
+         <div class="button-container">
+            <button id="button3" onclick="window.location.href='/WebProject/WebProject/Categories.html'">See more categories</button>
             
-            <div class="left">
-                <!-- Image containers for the left column -->
-                <div class="image-container">
-                    <img src="wedding 1new.jpg" alt="Wedding 1">
-                </div>
-                <!-- Image containers for wedding 3 -->
-                <div class="image-container" id="wedding-photos-left">
-                    <img src="wedding 3.jpg" alt="Wedding 3">
-                </div>
-            </div>
-            <div class="right">
-                <!-- Image containers for the right column -->
-                <div class="image-container">
-                    <img src="wedding 2.jpg" alt="Wedding 2">
-                </div>
-                <!-- Image containers for wedding 4 -->
-                <div class="image-container" id="wedding-photos-right">
-                    <img src="wedding 4.jpg" alt="Wedding 4">
-                </div>
-            </div>
-        </div>
-
-    
-    <div class="button-container">
-        <button onclick="showWedding()" id="button1">Show more/Hide</button>
-    </div>
-    <h2>Fashion Photogrphy</h2>
-    <div class="container">
-      
-        <div class="left">
-            <!-- Image containers for the left column -->
-            <div class="image-container">
-                <img src="fashion 1.jpg" alt="fashion 1">
-            </div>
-            <!-- Image containers for wedding 3 -->
-            <div class="image-container" id="fashion-photos-left">
-                <img src="fashion 3.jpg" alt="fashion 3">
-            </div>
-        </div>
-        <div class="right">
-            <!-- Image containers for the right column -->
-            <div class="image-container">
-                <img src="fashion 2.jpg" alt="fashion 2">
-            </div>
-            <!-- Image containers for wedding 4 -->
-            <div class="image-container" id="fashion-photos-right">
-                <img src="fashion 4.jpg" alt="fashion 4">
-            </div>
-        </div>
-    </div>
-
-
-<div class="button-container">
-    <button onclick="showFashion()" id="button1">Show more/Hide</button>
-</div>
-<h2>Wildlife Photography</h2>
-<div class="container">
-    
-    <div class="left">
-        <!-- Image containers for the left column -->
-        <div class="image-container">
-            <img src="wild 1.jpeg" alt="Wild 1">
-        </div>
-        <!-- Image containers for wedding 3 -->
-        <div class="image-container" id="wild-photos-left">
-            <img src="wild 3.jpg" alt="Wild 3">
-        </div>
-    </div>
-    <div class="right">
-        <!-- Image containers for the right column -->
-        <div class="image-container">
-            <img src="wild 2.png" alt="wild 2">
-        </div>
-        <!-- Image containers for wedding 4 -->
-        <div class="image-container" id="wild-photos-right">
-            <img src="wild 4.jpeg" alt="Wild 4">
-        </div>
-    </div>
-</div>
-
-
-<div class="button-container">
-<button onclick="showWild()" id="button3">Show more/Hide</button>
-</div>
-
-    
-
-</section>
+         
+         
+       </div>
+        
+         
+       
+       
+         
+     
+ </div>
+ 
+     <script src="js/jquery.min.js"></script> 
+     <script src="js/imagesloaded.pkgd.min.js"></script>
+     <script src="js/lightbox.min.js"></script>
+     <script src="js/jquery.lightroom.js"></script>
+     
+     <script type="text/javascript">
+         $("#jLightroom").lightroom({
+             image_container_selector: ".jlr_item",
+             img_selector: "img.jlr_img",
+             img_class_loaded: "jlr_loaded",
+             img_space: 6,
+             img_mode: 'min',
+             init_callback: function(elem){$(elem).removeClass("gray_out")}
+         }).init();
+     </script>
+ 
+ 
 
 
 
@@ -133,6 +141,7 @@
  
 
 <script src="scripts.js"></script>
+<script src="weddingscript.js"></script>
 
 </body>
 
