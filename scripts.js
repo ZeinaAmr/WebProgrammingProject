@@ -106,16 +106,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
    
 
-        function showWedding() {
-          var weddingImageLeft = document.getElementById("wedding-photos-left");
-          var weddingImageRight = document.getElementById("wedding-photos-right");
+        function showPortrait() {
+          var portraitImageLeft = document.getElementById("portrait-photos-left");
+          var portraitImageRight = document.getElementById("portrait-photos-right");
       
-          if (weddingImageLeft.style.display === "none" || weddingImageLeft.style.display === "") {
-              weddingImageLeft.style.display = "block";
-              weddingImageRight.style.display = "block";
+          if (portraitImageLeft.style.display === "none" || portraitImageLeft.style.display === "") {
+              portraitImageLeft.style.display = "block";
+              portraitImageRight.style.display = "block";
           } else {
-              weddingImageLeft.style.display = "none";
-              weddingImageRight.style.display = "none";
+              portraitImageLeft.style.display = "none";
+              portraitImageRight.style.display = "none";
           }
       }
 
@@ -132,20 +132,9 @@ document.addEventListener('DOMContentLoaded', function() {
             fashionImageRight.style.display = "none";
         }
     }
-      
-    function showWild() {
-      var wildImageLeft = document.getElementById("wild-photos-left");
-      var wildImageRight = document.getElementById("wild-photos-right");
-  
-      if (wildImageLeft.style.display === "none" || wildImageLeft.style.display === "") {
-          wildImageLeft.style.display = "block";
-          wildImageRight.style.display = "block";
-      } else {
-          wildImageLeft.style.display = "none";
-          wildImageRight.style.display = "none";
-      }
-  }
 
+   
 
   
+
 
