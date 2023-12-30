@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-	              ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+
+<style type="text/css">
+
+    body{
+        background-color: white;
+
+    }
+
+    h1{
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .jlr{
+        font-size:0;
+    }
+
+    .jlr .jlr_item{
+        font-size:1rem;
+        display:inline-block;
+        box-sizing:border-box;
+        padding:6px;
+        opacity: 1;
+    }
+
+    .jlr img.jlr_img{
+        height: 200px;
+        opacity:1;
+    }
+
+
+
+
+
+.jlr img.jlr_loaded {
+     -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    opacity: 1;
+}
+
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+<body>
+   <div class="continer">
+    <h1 style="margin-top: 70px;">Wedding Photography</h1>
+     <div id="jLightroom" class="jlr">
+        <a href="wedding 1new.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 1new.jpg" class="jlr_img"/></a>
+        <a href="wedding 2.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 2.jpg" class="jlr_img"/></a>
+        <a href="wedding 3.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 3.jpg" class="jlr_img"/></a>
+        <a href="wedding 6.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 6.jpg" class="jlr_img"/></a>
+        <a href="wedding 8.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 8.jpg" class="jlr_img"/></a>
+        <a href="wedding 4.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 4.jpg" class="jlr_img"/></a>
+        <a href="wedding 5.jpeg" data-lightbox="lbl" class="jlr_item"><img src="wedding 5.jpeg" class="jlr_img"/></a>
+        <a href="wedding 7.jpeg" data-lightbox="lbl" class="jlr_item"><img src="wedding 7.jpeg" class="jlr_img"/></a>
+        <a href="wedding 9.jpeg" data-lightbox="lbl" class="jlr_item"><img src="wedding 9.jpeg" class="jlr_img"/></a>
+        <a href="wedding 10.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 10.jpg" class="jlr_img"/></a>
+        <a href="wedding 11.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 11.jpg" class="jlr_img"/></a>
+        <a href="wedding 12.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 12.jpg" class="jlr_img"/></a>
+        <a href="wedding 13.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 13.jpg" class="jlr_img"/></a>
+        <a href="wedding 14.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 14.jpg" class="jlr_img"/></a>
+        <a href="wedding 15.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 15.jpg" class="jlr_img"/></a>
+        <a href="wedding 17.jpg" data-lightbox="lbl" class="jlr_item"><img src="wedding 17.jpg" class="jlr_img"/></a>
+    </div>
+</div>
+
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery.lightroom.js"></script>
+    
+    <script type="text/javascript">
+        $("#jLightroom").lightroom({
+            image_container_selector: ".jlr_item",
+            img_selector: "img.jlr_img",
+            img_class_loaded: "jlr_loaded",
+            img_space: 6,
+            img_mode: 'min',
+            init_callback: function(elem){$(elem).removeClass("gray_out")}
+        }).init();
+    </script>
+
+
+
+
+    
+<script src="weddingscript.js"></script>
+    
+    
+</body>
+</html>
