@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Jan 01, 2024 at 09:29 PM
+-- Generation Time: Jan 01, 2024 at 10:02 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,6 +40,7 @@ INSERT INTO `architectural` (`ID`, `Name`) VALUES
 ('A1', 'Arch 1.jpeg'),
 ('A10', 'arch 10.jpg'),
 ('A11', 'arch 11.jpeg'),
+('A12', 'arch 12.jpg'),
 ('A2', 'arch 2.jpeg'),
 ('A3', 'arch 3.jpg'),
 ('A4', 'arch 4.jpg'),
@@ -71,15 +72,12 @@ INSERT INTO `fashion` (`ID`, `Name`) VALUES
 ('F12', 'fashion 12.jpg'),
 ('F13', 'fashion 13.jpg'),
 ('F14', 'fashion 14.jpg'),
-('F15', 'fashion 15.jpeg'),
 ('F16', 'fashion 16.jpg'),
 ('F17', 'fashion 17.jpg'),
 ('F18', 'fashion 18.jpg'),
 ('F19', 'fashion 19.jpeg'),
 ('F2', 'fashion 2.jpg'),
 ('F20', 'fashion 20.jpg'),
-('F21', 'fashion 21.jpg'),
-('F22', 'fashion 22.jpg'),
 ('F3', 'fashion 3.jpg'),
 ('F4', 'fashion 4.jpg'),
 ('F5', 'fashion 5.jpg'),
@@ -167,7 +165,6 @@ INSERT INTO `wedding` (`ID`, `Name`) VALUES
 ('W13', 'wedding 13.jpg'),
 ('W14', 'wedding 14.jpg'),
 ('W15', 'wedding 15.jpg'),
-('W16', 'wedding 16.jpeg'),
 ('W17', 'wedding 7.jpg'),
 ('W2', 'wedding 2.jpg'),
 ('W3', 'wedding 3.jpg'),
