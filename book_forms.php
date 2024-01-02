@@ -9,42 +9,31 @@ $conn = mysqli_connect($server, $user, $pass, $dbname,3308);
 
 
 
+if (isset($_POST['send'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    $location = $_POST['location'];
+    $city = $_POST['city'];
+    $duration = $_POST['duration'];
+    $date = $_POST['date'];
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $address = $_POST['address'];
-        $location = $_POST['location'];
-        $city = $_POST['city'];
-        $duration = $_POST['duration'];
-        $date = $_POST['date'];
-        
+    // Check if there is an existing booking on the same date
+    $checkQuery = "SELECT * FROM book WHERE date = '$date'";
+    $result = mysqli_query($connection, $checkQuery);
 
-        $sql = "INSERT INTO book_form (name, email, phone, address, location, city, duration, date) VALUES ('$name', '$email', '$phone', '$address', '$location', '$city', '$duration', '$date')";
+    if (mysqli_num_rows($result) > 0) {
+        echo json_encode(array('status' => 'error', 'message' => 'Booking on the same date already exists.'));
+    } else {
+        // Proceed with the booking insertion
+        $request = "INSERT INTO book(name, email, phone, address, location, city, duration, date) 
+                    VALUES('$name', '$email', '$phone', '$address', '$location', '$city', '$duration', '$date')";
+        mysqli_query($connection, $request);
 
-        try {
-            if (mysqli_query($conn,$sql)) {
-                echo "success";
-                exit();
-            } else {
-                throw new Exception(mysqli_error($conn)); // Catch and throw the exception
-            }
-        } catch (Exception $e) {
-            if ($conn->errno == 1062) {
-                echo "Email or Username has been used before";
-                exit();
-            } else {
-                echo "Insertion failed: " . $e->getMessage();
-           
-                exit();
-            }
-        }
-       
-    
-
-    mysqli_close($conn);
+        echo json_encode(array('status' => 'success', 'message' => 'Booking successful.'));
+    }
+} else {
+    echo json_encode(array('status' => 'error', 'message' => 'Invalid request.'));
 }
-
-
 ?>
