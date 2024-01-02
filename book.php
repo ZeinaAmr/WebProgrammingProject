@@ -11,6 +11,36 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+
+<!-- Add this script block in the head section of your HTML -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.book-form').submit(function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: 'book_form.php',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function (response) {
+                    if (response.status === 'success') {
+                        alert(response.message);
+                        location.reload();
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert('Something went wrong. Please try again.');
+                }
+            });
+        });
+    });
+</script>
     
 
 </head>
