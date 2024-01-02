@@ -9,12 +9,13 @@
 
 	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    
+
 
 <style type="text/css">
 
     body{
-        background-color: white;
+        background-color: #dbddf1;
+        padding-left: 45px;
 
     }
 
@@ -53,6 +54,13 @@
     transition: opacity 1s ease-in;
     opacity: 1;
 }
+
+img{
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+
 
 
 
@@ -94,6 +102,7 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/jquery.lightroom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     
     <script type="text/javascript">
         $("#jLightroom").lightroom({
@@ -104,6 +113,10 @@
             img_mode: 'min',
             init_callback: function(elem){$(elem).removeClass("gray_out")}
         }).init();
+
+
+        
+
     </script>
 
 
