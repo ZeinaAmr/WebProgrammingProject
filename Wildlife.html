@@ -14,7 +14,8 @@
 <style type="text/css">
 
     body{
-        background-color: white;
+        background-color: #dbddf1;
+        padding-left: 40px;
 
     }
 
@@ -34,11 +35,14 @@
         box-sizing:border-box;
         padding:6px;
         opacity: 1;
+        
     }
 
     .jlr img.jlr_img{
         height: 200px;
         opacity:1;
+        
+        
     }
 
 
@@ -54,6 +58,10 @@
     opacity: 1;
 }
 
+ img{
+  background-color: #ffffff;
+  padding: 15px;
+}
 
 
 </style>
@@ -66,9 +74,11 @@
 
 
 <body>
+    <section>
    <div class="continer">
     <h1 style="margin-top: 70px;">Wildlife Photography</h1>
      <div id="jLightroom" class="jlr">
+        
         <a href="wild 1.jpeg" data-lightbox="lbl" class="jlr_item"><img src="wild 1.jpeg" class="jlr_img"/></a>
         <a href="wild 2.jpeg" data-lightbox="lbl" class="jlr_item"><img src="wild 2.jpeg" class="jlr_img"/></a>
         <a href="wild 2.png" data-lightbox="lbl" class="jlr_item"><img src="wild 2.png" class="jlr_img"/></a>
@@ -88,7 +98,11 @@
       
         
     </div>
+    
 </div>
+
+
+</section>
 
     <script src="js/jquery.min.js"></script> 
     <script src="js/imagesloaded.pkgd.min.js"></script>
