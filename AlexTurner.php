@@ -13,7 +13,7 @@
     <section id="header" class="vh-100 flex">
         <style>
                 #header{
-                    background: url('images/Images/wedding 2.jpg') center/ cover no-repeat fixed;
+                    background: url('Images/Images/wedding 2.jpg') center/ cover no-repeat fixed;
                     justify-content: flex-start;
                     align-items: flex-end;
                 }
@@ -68,7 +68,7 @@
                 <div class="container">
                     <div class="about-content grid">
                         <div class="about-left">
-                            <img src="images/wedding-img/wedding-ph-1.jpg" alt="Deanna Williams">
+                            <img src="Images/Images/wedding-ph-1.jpg" alt="Deanna Williams">
                         </div>
                         <div class="about-right">
                             <div class="title">
@@ -87,7 +87,7 @@
                     <div class="work-content">
                         <style>
                             #work{
-                                background: url("images/Images/wedding 3.jpg") center/ cover no-repeat fixed;
+                                background: url("Images/Images/wedding 3.jpg") center/ cover no-repeat fixed;
                                 color: var(--light-color);
                             }
                         </style>
@@ -130,13 +130,13 @@
                             <a href="#contact" class="btn-down"><i class="fas fa-chevron-down"></i></a>
                         </div>
                         <div class="portfolio-grid grid">
-                            <div><img src="images/Images/wedding 1.jpg" alt=""></div>
-                            <div><img src="images/Images/wedding 2.jpg" alt=""></div>
-                            <div><img src="images/Images/wedding 4.jpg" alt=""></div>
-                            <div><img src="images/Images/wedding 15.jpg" alt=""></div>
-                            <div><img src="images/Images/wedding 6.jpg" alt=""></div> 
-                            <div><img src="images/Images/wedding 7.jpeg" alt=""></div> 
-                            <div><img src="images/Images/wedding 17.jpg" alt=""></div>            
+                            <div><img src="Images/Images/wedding 1.jpg" alt=""></div>
+                            <div><img src="Images/Images/wedding 2.jpg" alt=""></div>
+                            <div><img src="Images/Images/wedding 4.jpg" alt=""></div>
+                            <div><img src="Images/Images/wedding 15.jpg" alt=""></div>
+                            <div><img src="Images/Images/wedding 6.jpg" alt=""></div> 
+                            <div><img src="Images/Images/wedding 7.jpeg" alt=""></div> 
+                            <div><img src="Images/Images/wedding 17.jpg" alt=""></div>            
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                 }
 
                 .footer{
-                    background: url('images/footer-bg.jpg') no-repeat;
+                    background: url('Images/Images/footer.jpg') no-repeat;
                     background-size: cover;
                     background-position: center;
                 }

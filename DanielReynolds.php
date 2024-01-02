@@ -13,7 +13,7 @@
     <section id="header" class="vh-100 flex">
         <style>
                 #header{
-                    background: url('images/Images/portrait 2.jpg') center/ cover no-repeat fixed;
+                    background: url('Images/Images/portrait 2.jpg') center/ cover no-repeat fixed;
                     justify-content: flex-start;
                     align-items: flex-end;
                 }
@@ -68,7 +68,7 @@
                 <div class="container">
                     <div class="about-content grid">
                         <div class="about-left">
-                            <img src="images/portrait-img/portrait-ph-1.jpg" alt="Daniel Reynolds">
+                            <img src="Images/Images/portrait-ph-1.jpg" alt="Daniel Reynolds">
                         </div>
                         <div class="about-right">
                             <div class="title">
@@ -213,7 +213,7 @@
                 }
 
                 .footer{
-                    background: url('images/footer-bg.jpg') no-repeat;
+                    background: url('Images/Images/footer.jpg') no-repeat;
                     background-size: cover;
                     background-position: center;
                 }

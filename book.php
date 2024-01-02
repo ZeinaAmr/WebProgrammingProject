@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>
@@ -23,6 +24,7 @@
             <a href="categories.php">Categories</a>
             <a href="photographers.php">Photographers</a>
             <a href="book.php">Book</a>
+            <a href="http://localhost/WebProgrammingProject-master/f/login-reg.html">Register</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -30,13 +32,13 @@
     </section>
 
     <div class="heading" style="background:url(Images/Images/booking-header.jpg) no-repeat">
-        <h1>about</h1>
+        <h1>book</h1>
     </div>
 
 
     <section class="booking">
         <h1 class="heading-title">book your photographer</h1>
-        <form action="book_form.php" methot="post" class="book-form">
+        <form action="book_form.php" method="post" class="book-form">
             <div class="flex">
             <div class="inputBox">
                 <span>name:</span>

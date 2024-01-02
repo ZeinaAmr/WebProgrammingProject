@@ -24,13 +24,14 @@
             <a href="categories.php">Categories</a>
             <a href="photographers.php">Photographers</a>
             <a href="book.php">Book</a>
+            <a href="http://localhost/WebProgrammingProject-master/f/login-reg.html">Register</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
     </section>
 
-    <div class="heading" style="background:url(images/photographers-header.jpg) no-repeat">
+    <div class="heading" style="background:url('Images/Images/photographers-header.jpg') no-repeat">
         <h1>photographers</h1>
     </div>
 
@@ -42,7 +43,7 @@
             <h2 class="main-title">Fashion Photographers</h2>
             <div class="content">
                 <div class="image">
-                    <img src="images/fashion-img/fashion-ph.jpeg" alt="Deanna Williams">
+                    <img src="Images/Images/fashion-ph.jpeg" alt="Deanna Williams">
                 </div>
                 <div class="text-box">
                     <h3>Deanna Williams</h3>
@@ -57,7 +58,7 @@
                 <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <a href="#" class="btn">portfolio</a>
+            <a href="Deanna Williams.php" class="btn">portfolio</a>
 
         </div>
 
@@ -67,7 +68,7 @@
 
             <div class="content">
                 <div class="image">
-                    <img src="images/fashion-img/fashion-ph-2.jpg" alt="Sophia Harper">
+                    <img src="Images/Images/fashion-ph-2.jpg" alt="Sophia Harper">
                 </div>
                 <div class="text-box">
                     <h3>Sophia Harper</h3>
@@ -92,7 +93,7 @@
             <h2 class="main-title">Wedding Photographers</h2>
             <div class="content">
                 <div class="image">
-                    <img src="images/wedding-img/wedding-ph-1.jpg" alt="Alex Turner">
+                    <img src="Images/Images/wedding-ph-1.jpg" alt="Alex Turner">
                 </div>
                 <div class="text-box">
                     <h3> Alex Turner</h3>
@@ -107,7 +108,7 @@
                 <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <a href="#" class="btn">portfolio</a>
+            <a href="AlexTurner.php" class="btn">portfolio</a>
 
         </div>
     </section>
@@ -115,7 +116,7 @@
         <div class="container">
             <div class="content">
                 <div class="image">
-                    <img src="images/wedding-img/wedding-photographer-22.jpeg" alt="Emma Bennett">
+                    <img src="Images/Images/wedding-ph-2.jpeg" alt="Emma Bennett">
                 </div>
                 <div class="text-box">
                     <h3>Emma Bennett</h3>
@@ -140,7 +141,7 @@
             <h2 class="main-title">Portrait Photographers</h2>
             <div class="content">
                 <div class="image">
-                    <img src="images/portrait-img/portrait-ph-1.jpg" alt="Daniel Reynolds">
+                    <img src="Images/Images/portrait-ph-1.jpg" alt="Daniel Reynolds">
                 </div>
                 <div class="text-box">
                     <h3>Daniel Reynolds</h3>
@@ -155,7 +156,7 @@
                 <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <a href="#" class="btn">portfolio</a>
+            <a href="DanielReynolds.php" class="btn">portfolio</a>
 
         </div>
     </section>
@@ -163,7 +164,7 @@
         <div class="container">
             <div class="content">
                 <div class="image">
-                    <img src="images/portrait-img/portrait-ph-2.jpg" alt="Olivia Mitchell">
+                    <img src="Images/Images/portrait-ph-2.jpg" alt="Olivia Mitchell">
                 </div>
                 <div class="text-box">
                     <h3>Olivia Mitchell</h3>
@@ -188,7 +189,7 @@
             <h2 class="main-title">Wildlife Photographers</h2>
             <div class="content">
                 <div class="image">
-                    <img src="images/wildlife-img/WL-1.jpg" alt="Adrian Turner">
+                    <img src="Images/Images/WL-1.jpg" alt="Adrian Turner">
                 </div>
                 <div class="text-box">
                     <h3>Adrian Turner</h3>
@@ -203,7 +204,7 @@
                 <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <a href="#" class="btn">portfolio</a>
+            <a href="AdrianTurner.php" class="btn">portfolio</a>
 
         </div>
     </section>
@@ -211,7 +212,7 @@
         <div class="container">
             <div class="content">
                 <div class="image">
-                    <img src="images/wildlife-img/WL-2.jpg" alt="Hiroshi Tanaka">
+                    <img src="Images/Images/WL-2.jpg" alt="Hiroshi Tanaka">
                 </div>
                 <div class="text-box">
                     <h3>Hiroshi Tanaka</h3>
@@ -236,7 +237,7 @@
             <h2 class="main-title">Architecture Photographers</h2>
             <div class="content">
                 <div class="image">
-                    <img src="images/arch-img/arch-1.jpg" alt="Gabriel Martinez">
+                    <img src="Images/Images/arch-ph-1.jpg" alt="Gabriel Martinez">
                 </div>
                 <div class="text-box">
                     <h3>Gabriel Martinez</h3>
@@ -251,7 +252,7 @@
                 <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <a href="#" class="btn">portfolio</a>
+            <a href="GabrielMartinez.php" class="btn">portfolio</a>
 
         </div>
     </section>
@@ -259,7 +260,7 @@
         <div class="container">
             <div class="content">
                 <div class="image">
-                    <img src="images/arch-img/arch-2.jpg" alt="Oliver Anderson">
+                    <img src="Images/Images/arch-ph-2.jpg" alt="Oliver Anderson">
                 </div>
                 <div class="text-box">
                     <h3>Oliver Anderson</h3>
@@ -286,7 +287,13 @@
 
 
 <section class="footer">
-
+<style>
+            .footer{
+                background: url('Images/Images/footer.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
     <div class="box-container">
         
         <div class="box">

@@ -13,7 +13,7 @@
     <section id="header" class="vh-100 flex">
         <style>
                 #header{
-                    background: url('images/Images/wild 01.jpg') center/ cover no-repeat fixed;
+                    background: url('Images/Images/wildlife 01.jpg') center/ cover no-repeat fixed;
                     justify-content: flex-start;
                     align-items: flex-end;
                 }
@@ -68,7 +68,7 @@
                 <div class="container">
                     <div class="about-content grid">
                         <div class="about-left">
-                            <img src="images/wildlife-img/WL-1.jpg" alt="Adrian Turner">
+                            <img src="Images/Images/WL-1.jpg" alt="Adrian Turner">
                         </div>
                         <div class="about-right">
                             <div class="title">
@@ -87,7 +87,7 @@
                     <div class="work-content">
                         <style>
                             #work{
-                                background: url("images/Images/wild 3.jpg") center/ cover no-repeat fixed;
+                                background: url("Images/Images/wildlife 3.jpg") center/ cover no-repeat fixed;
                                 color: var(--light-color);
                             }
                         </style>
@@ -130,13 +130,13 @@
                             <a href="#contact" class="btn-down"><i class="fas fa-chevron-down"></i></a>
                         </div>
                         <div class="portfolio-grid grid">
-                            <div><img src="images/Images/wild 9.jpg" alt=""></div>
-                            <div><img src="images/Images/wild 02.jpg" alt=""></div>
-                            <div><img src="images/Images/wild 5.jpg" alt=""></div>
-                            <div><img src="images/Images/wild 01.jpg" alt=""></div>
-                            <div><img src="images/Images/wild 03.jpeg" alt=""></div> 
-                            <div><img src="images/Images/wild 3.jpg" alt=""></div> 
-                            <div><img src="images/Images/wild 04.jpg" alt=""></div>            
+                            <div><img src="Images/Images/wild 9.jpg" alt=""></div>
+                            <div><img src="Images/Images/wildlife 02.jpg" alt=""></div>
+                            <div><img src="Images/Images/wild 5.jpg" alt=""></div>
+                            <div><img src="Images/Images/wildlife 01.jpg" alt=""></div>
+                            <div><img src="Images/Images/wildlife 03.jpeg" alt=""></div> 
+                            <div><img src="Images/Images/wild 3.jpg" alt=""></div> 
+                            <div><img src="Images/Images/wildlife 04.jpg" alt=""></div>            
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                 }
 
                 .footer{
-                    background: url('images/footer-bg.jpg') no-repeat;
+                    background: url('Images/Images/footer.jpg') no-repeat;
                     background-size: cover;
                     background-position: center;
                 }

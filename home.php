@@ -21,9 +21,10 @@
         <nav class="navbar">
             <a href="home.php">Home</a>
             <a href="about.php">About</a>
-            <a href="categories.php">Categories</a>
+            <a href="http://localhost/WebProgrammingProject-master/categories.php">Categories</a>
             <a href="photographers.php">Photographers</a>
             <a href="book.php">Book</a>
+            <a href="http://localhost/WebProgrammingProject-master/f/login-reg.html">Register</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -36,27 +37,27 @@
 
         <div class="swiper-wrapper">
             
-            <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
+            <div class="swiper-slide slide" style="background:url('Images/Images/wedding 11.jpg') no-repeat">
                 <div class="content">
                     <span>where all memories are captured</span>
                     <h3>creating visual heirlooms</h3>
-                    <a href="categories.php" class="btn">discover more</a>
+                    <a href="http://localhost/WebProgrammingProject-master/categories.php" class="btn">discover more</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
+            <div class="swiper-slide slide" style="background:url('Images/Images/fashion 11.jpg') no-repeat">
                 <div class="content">
                     <span>where all memories are captured</span>
                     <h3>Expertise meets creativity</h3>
-                    <a href="categories.php" class="btn">discover more</a>
+                    <a href="http://localhost/WebProgrammingProject-master/categories.php" class="btn">discover more</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
+            <div class="swiper-slide slide" style="background:url('Images/Images/wild 3.jpg') no-repeat">
                 <div class="content">
                     <span>where all memories are captured</span>
                     <h3>The beauty of life, captured</h3>
-                    <a href="categories.php" class="btn">discover more</a>
+                    <a href="http://localhost/WebProgrammingProject-master/categories.php" class="btn">discover more</a>
                 </div>
             </div>
 
@@ -72,7 +73,7 @@
     <section class="home-about">
 
         <div class="image">
-            <img src="images/about-img.jpg" alt="about image">
+            <img src="Images/Images/about-img.jpg" alt="about image">
         </div>
 
         <div class="content">
@@ -84,6 +85,74 @@
     </section>
 
     <!-- categories-->
+<section class="categories">
+    <style>
+        .jlr {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .jlr .jlr_item {
+        font-size: 1rem;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 6px;
+        opacity: 1;
+        width: 50%; /* Display two images side by side */
+    }
+
+    .jlr img.jlr_img {
+        width: 100%; /* Ensure images take full width of their container */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .jlr img.jlr_loaded {
+        -webkit-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        -o-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+        transition: opacity 1s ease-in;
+        opacity: 1;
+    }
+    </style>
+    <div class="continer">
+        <div>
+        <h1 style="margin-top: 70px;">Portrait Photography</h1>
+    </div>
+      <div id="jLightroom" class="jlr">
+         <a href="DanielReynolds.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/portrait 4.jpg" class="jlr_img"/></a>
+         <a href="DanielReynolds.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/portrait 5.jpg" class="jlr_img"/></a>
+         <div class="button-container">
+            <button onclick="showPortrait()" id="button1">Show more/Hide</button>
+        </div>
+       
+         <a href="DanielReynolds.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/portrait 9.jpg" class="jlr_img" id="portrait-photos-left"/></a>
+         <a href="DanielReynolds.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/portrait 13.jpg" class="jlr_img" id="portrait-photos-right"/></a>
+      </div>
+         <div>
+         <h1 style="margin-top: 70px;">Fashion Photography</h1>
+         </div>
+         <div id="jLightroom" class="jlr">
+         <a href="Deanna Williams.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/fashion 1.jpg" class="jlr_img"/></a>
+         <a href="Deanna Williams.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/fashion 2.jpg" class="jlr_img"/></a>
+         
+         <div class="button-container">
+            <button onclick="showFashion()" id="button2">Show more/Hide</button>
+        </div>
+         <a href="Deanna Williams.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/fashion 3.jpg" class="jlr_img" id="fashion-photos-left"/></a>
+         <a href="Deanna Williams.php" data-lightbox="lbl" class="jlr_item"><img src="Images/Images/fashion 4.jpg" class="jlr_img" id="fashion-photos-right"/></a>
+         </div>
+         <div class="button-container">
+            <button id="button3" onclick="window.location.href='http://localhost/WebProgrammingProject-master/categories.php'">See more categories</button>
+            
+         
+         
+       </div>
+       </div>
+
+
+    </section>
     <!-- photographers-->
 
     <section class="home-offer">
@@ -102,14 +171,20 @@
        
 
     <section class="footer">
-
+        <style>
+            .footer{
+                background: url('Images/Images/footer.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
         <div class="box-container">
             
             <div class="box">
                 <h3>Quick Links</h3>
                 <a href="home.php"><i class="fas fa-angle-right"></i>Home</a>
                 <a href="about.php"><i class="fas fa-angle-right"></i>About</a>
-                <a href="categories.php"><i class="fas fa-angle-right"></i>Categories</a>
+                <a href="http://localhost/WebProgrammingProject-master/categories.php"><i class="fas fa-angle-right"></i>Categories</a>
                 <a href="photographers.php"><i class="fas fa-angle-right"></i>Photographers</a>
                 <a href="photographers.php"><i class="fas fa-angle-right"></i>Book</a>
             </div>
@@ -153,6 +228,26 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
+
+<script src="scripts.js"></script>
+<script src="weddingscript.js"></script>
+
+
+<script src="js/jquery.min.js"></script>
+ <script src="js/imagesloaded.pkgd.min.js"></script>
+ <script src="js/lightbox.min.js"></script>
+ <script src="js/jquery.lightroom.js"></script>
+ 
+ <script type="text/javascript">
+     $("#jLightroom").lightroom({
+         image_container_selector: ".jlr_item",
+         img_selector: "img.jlr_img",
+         img_class_loaded: "jlr_loaded",
+         img_space: 6,
+         img_mode: 'min',
+         init_callback: function(elem){$(elem).removeClass("gray_out")}
+     }).init();
+ </script>
 
 
 </body>

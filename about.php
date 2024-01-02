@@ -23,13 +23,15 @@
             <a href="categories.php">Categories</a>
             <a href="photographers.php">Photographers</a>
             <a href="book.php">Book</a>
+            <a href="http://localhost/WebProgrammingProject-master/f/login-reg.html">Register</a>
+
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
     </section>
 
-    <div class="heading" style="background:url(images/about-page.jpg) no-repeat">
+    <div class="heading" style="background:url('Images/Images/about-header.jpg') no-repeat">
         <h1>about</h1>
     </div>
 
@@ -37,7 +39,7 @@
     <section class="about">
         <section class="start">
             <div class="image">
-                <img src="images/about-img.jpg" alt="about image">
+                <img src="Images/Images/about-img.jpg" alt="about image">
             </div>
 
 
@@ -76,6 +78,11 @@
 
 
     <section class="footer">
+        <style>.footer{
+    background: url('Images/Images/footer.jpg');
+    background-size: cover;
+    background-position: center;
+}</style>
 
         <div class="box-container">
             
